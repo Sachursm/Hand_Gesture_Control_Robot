@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import socket
 
-ESP_IP = "192.168.1.123"   # <- replace with your ESP8266 IP
+ESP_IP = "192.168.1.11"   # <- replace with your ESP8266 IP
 ESP_PORT = 4210
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -80,8 +80,8 @@ with mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7, min_tracking_
         # Display command box with background
         text = f'{cmd_name}'
         font = cv2.FONT_HERSHEY_SIMPLEX
-        font_scale = 1.2
-        thickness = 3
+        font_scale = 1
+        thickness = 2
         
         # Get text size for background box
         (text_width, text_height), baseline = cv2.getTextSize(text, font, font_scale, thickness)

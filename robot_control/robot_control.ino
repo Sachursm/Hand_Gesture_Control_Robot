@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 
-const char* SSID = "YourWiFiSSID";
-const char* PASS = "YourWiFiPassword";
+const char* SSID = "GNXS-13D910";
+const char* PASS = "12345678";
 
 WiFiServer server(4210);  // TCP port
 
